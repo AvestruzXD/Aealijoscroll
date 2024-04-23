@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="icon_pap_aealijo_scroll.png">
+  <title>AealijoScroll</title>
+  <link rel="stylesheet" href="login.css">
+  <!-- Estilo personalizado para a página -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+    body {
+        font-family: 'Poppins', sans-serif;
+        overflow: hidden; /* Adicionando overflow: hidden para ocultar a barra de rolagem */
+    }
+  </style>
+</head>
+<body>
+    <!-- Cabeçalho da página -->
+    <header class="header">
+      <!-- Div para a página de login -->
+      <div class="login-page">
+        <!-- Título da página como link -->
+        <h1>AealijoScroll</h1>
+        <!-- Descrição da página -->
+        <p>Bem-Vindo à rede social dos Cursos Profissionais da D.Sancho II</p>
+        <!-- Imagem de ícone ou avatar -->
+        <img src="icon_pap_aealijo_scroll.png" alt="login_person">
+        <!-- Formulário de login -->
+        <form id="loginForm" action="processa_login.php" method="post">
+          <!-- Campo para o número mecanográfico -->
+          <label for="card-number">N° Mecanográfico (n°Cartão)</label>
+          <input type="text" id="card-number" name="card-number" placeholder="Ex: a19543" required>
+          <!-- Campo para a senha -->
+          <label for="password">Password (palavra-passe)</label>
+          <input type="password" id="password" name="password" placeholder="Ex: ********" required>
+          <!-- Botão de login -->
+          <button type="submit">Login</button><a href="teste.html"></a>
+      </form>
+    </div>        
+  </header>
+
+  <!-- Script para validação do formulário -->
+  <script>
+      // Verifica se os campos estão vazios
+      if (cardNumber.trim() === "" || password.trim() === "") {
+        // Exibe um alerta se os campos estiverem vazios
+        alert("Por favor, preencha todos os campos antes de fazer login.");
+        // Impede o envio do formulário
+        event.preventDefault();
+      }
+  </script>
+</body>
+</html>
